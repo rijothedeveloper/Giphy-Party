@@ -1,7 +1,13 @@
-#remove {
+#remove-btn {
     background-color: red;
+    color: white;
+    padding: 5px;
 }
 
 form {
     display: inline-block;
+}
+
+form input, form button {
+    padding: 5px;
 }

@@ -17,8 +17,16 @@ function addImageToHtml(imgUrl) {
     imgArea.append(imgTag);
 }
 
+const removeContent = () => {
+    document.querySelector("#image-area").innerHTML = '';
+
+}
+
 const form = document.querySelector("#query-form");
 form.addEventListener("submit", (evt) => {
     evt.preventDefault();
     getRandomImgFromApi(evt.currentTarget[0].value);
 })
+
+document.querySelector("#remove-btn")
+    .addEventListener("click", removeContent);
